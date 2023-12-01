@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    </noscript>
+    <link
+      href="static/css/font-awesome/css/all.min.css?ver=1.2.0"
+      rel="stylesheet" />
+    <link
+      href="static/css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0  "
+      rel="stylesheet" />
+    <link href="static/css/bootstrap.min.css?ver=1.2.0" rel="stylesheet" />
+    <link href="static/css/aos.css?ver=1.2.0" rel="stylesheet" />
+    <link href="static/css/main.css?ver=1.2.0" rel="stylesheet" />
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  {% include 'html/nav-page.html' %}
+  <body id="top">
+    <div class="page-content">
+      <div id="content">
+        <header>
+          <div class="cover bg-light">
+            <div class="container px-3">
+              <div class="row">
+                <div class="col-lg-6 p-2">
+                  <img
+                    class="img-fluid"
+                    src="{% static 'images/illustrations/hello3.svg' %}"
+                    alt="hello" />
+                </div>
+                <div class="col-lg-6">
+                  <div class="mt-5">
+                    <p class="lead text-uppercase mb-1">Hello!</p>
+                    <h1
+                      class="intro-title marker"
+                      data-aos="fade-left"
+                      data-aos-delay="50">
+                      I’m Prasanth kumar
+                    </h1>
+                    <p
+                      class="lead fw-normal mt-3"
+                      data-aos="fade-up"
+                      data-aos-delay="100">
+                      Python Django & Rest API Developer
+                    </p>
+                    <div
+                      class="social-nav"
+                      data-aos="fade-up"
+                      data-aos-delay="200">
+                      <nav role="navigation">
+                        <ul class="nav justify-content-left">
+                          
+                          <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://github.com/devPrasanthKumar?tab=repositories"
+                        title="Behance"
+                        ><i class="fab fa-github"></i
+                        ><span class="menu-title sr-only">GitHub</span></a
+                      >
+                    </li>
+                          
+                          <li class="nav-item">
+                            <a
+                              class="nav-link"
+                              href="https://www.linkedin.com/"
+                              title="LinkedIn"
+                              ><i class="fab fa-linkedin"></i
+                              ><span class="menu-title sr-only"
+                                >LinkedIn</span
+                              ></a
+                            >
+                          </li>
+                          
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200">
+                      <a
+                        class="btn btn-primary shadow-sm mt-1 hover-effect"
+                        href="{% url 'contact' %}"
+                        >contact me <i class="fas fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wave-bg"></div>
+        </header>
+        <div class="section pt-4 px-3 px-lg-4" id="about">
+          <div class="container-narrow">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="h4 my-2">Hai! I’m Prasanth kumar.</h2>
+                <p>
+                  Dedicated and results-driven Python Django Developer with a
+                  passion for crafting robust and scalable web applications and
+                  RESTful APIs. Leveraging a strong foundation in Python
+                  programming and extensive experience with the Django
+                  framework, I am committed to delivering high-quality solutions
+                  that seamlessly integrate functionality and aesthetics.
+                  Seeking a challenging role where I can contribute my expertise
+                  in web development, collaborate with cross-functional teams,
+                  and continue to expand my skills in creating efficient and
+                  innovative applications using Django and RESTful API
+                  technologies.
+                </p>
+                
+              </div>
+              <div
+                class="col-md-5 offset-md-1"
+                data-aos="fade-left"
+                data-aos-delay="100">
+                <div class="row mt-3">
+
+                  <div class="col-sm-2">
+                    <div class="pb-1">Name:</div>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">Prasanth kumar</div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="pb-1">Exp:</div>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">1</div>
+                  </div>
+
+                  <div class="col-sm-2">
+                    <div class="pb-1">Role:</div>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">Python Django Developer</div>
+                  </div>
+
+                  
+                  <div class="col-sm-2">
+                    <div class="pb-1">Skills:</div>
+                  </div>
+                  <div class="col-sm-10">
+                    <div class="pb-1 fw-bolder">Django Web framework</div>
+                    <div class="pb-1 fw-bolder">Django Rest API</div>
+                    <div class="pb-1 fw-bolder">Python</div>
+                    <div class="pb-1 fw-bolder">Git</div>
+                    <div class="pb-1 fw-bolder">Html</div>
+                    <div class="pb-1 fw-bolder">Css</div>
+                    <div class="pb-1 fw-bolder">JavaScript</div>
+                    <div class="pb-1 fw-bolder">Bootstrap 5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section px-3 px-lg-4 pt-5" id="services">
+          <div class="container-narrow">
+            <div class="text-center mb-5">
+              <h2 class="marker marker-center">My Projects</h2>
+            </div>
+            <div class="row py-3">
+
+
+              <!-- card1 -->
+
+                <div class="card mx-2" style="width: 18rem;">
+                      <img src="static/images/projpic1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Todo-list app</h5>
+                        <p class="card-text">this is real-time todo list app everyone can use this web application</p>
+                        <p class="card-text p-2 rounded shadow">I have implemeted CRUD operation,User Authentication,Authorization,</p>
+                        <p class="card-text"><span class="text-success bg-light fs-5">Tools : </span>  Python Django Web Framework,Bootstrap5</p>
+                        <a href="https://todo-app-by-prasanth.onrender.com/" class="btn btn-primary">Click to see </a>
+                      </div>
+                    </div>
+                <!-- end proj 1 -->
+
+                <!-- #proj 2 -->
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="static/images/projpic2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Weather Finder</h5>
+                    <p class="card-text">We can see weather condition of the cities by  simply search the city name </p>
+                    <p class="card-text">Integrate with OpenWeatherApi for fetch real time data</p>
+                        <p class="card-text"><span class="text-success bg-light fs-5">Tools : </span>  Python Django Web Framework,Bootstrap5,OpenWeatherApi</p>
+
+                    <a href="https://weatherapp-rbus.onrender.com/" class="btn btn-primary">Click to see</a>
+                  </div>
+                </div>
+                           
+                <!-- end proj2 -->
+
+                <!-- proj 3 -->
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="static/images/proj3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    
+                    <h5 class="card-title">Free Study Souce</h5>
+                    <p class="card-text">This website can helps to people who needs to learn something about technologies,Everyone can add their study material like YouTube video Links , Github Repo ,Website links on my website and people can see that best  links and study them if they want </p>
+                    <p class="card-text">it helps to others ,They can easily find out the right path to learn anything</p>
+                    <p class="card-text shadow rounded p-2">i have implemeted CRUD,Login,Sign in , logout,user role based permission,User Authentication,Authorization etc</p>
+                    <p class="card-text"><span class="text-success bg-light fs-5">Tools : </span>  Python Django Web Framework,Bootstrap5</p>
+                    
+                    <a href="https://freestudysourcelinks.onrender.com/" class="btn btn-primary">Click to see</a>
+                  </div>
+                </div>
+                
+
+          </div>
+          </div>
+        </div>
+        
+        
+        
+        
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start contact -->
+        
+        <!-- enf  -->
+        <footer class="pt-4 pb-4 text-center bg-light">
+          <div class="container">
+            <div class="my-3">
+              <div class="h4">Prasanth Kumar</div>
+              <p>Python Django & Rest API Developer </p>
+              <div class="social-nav">
+                <nav role="navigation">
+                  <ul class="nav justify-content-center">
+                    
+                    
+                    
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://www.linkedin.com/"
+                        title="LinkedIn"
+                        ><i class="fab fa-linkedin"></i
+                        ><span class="menu-title sr-only">LinkedIn</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://github.com/devPrasanthKumar?tab=repositories"
+                        title="Behance"
+                        ><i class="fab fa-github"></i
+                        ><span class="menu-title sr-only">GitHub</span></a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+                      </div>
+        </footer>
+      </div>
+    </div>
+    <div id="scrolltop">
+      <a class="btn btn-secondary" href="#top"
+        ><span class="icon"><i class="fas fa-angle-up fa-x"></i></span
+      ></a>
+    </div>
+    <script src="static/scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="static/scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="static/scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="static/scripts/purecounter.min.js?ver=1.2.0"></script>
+    <script src="static/scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="static/scripts/aos.min.js?ver=1.2.0' "></script>
+    <script src="static/scripts/main.js?ver=1.2.0"></script>
+  </body>
+</html>
